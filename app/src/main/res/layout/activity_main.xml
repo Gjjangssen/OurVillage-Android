@@ -21,7 +21,7 @@
         app:srcCompat="@android:drawable/screen_background_light" />
 
     <ImageView
-        android:id="@+id/important_todo"
+        android:id="@+id/txt_important"
         android:layout_width="291dp"
         android:layout_height="58dp"
         app:layout_constraintBottom_toBottomOf="parent"
