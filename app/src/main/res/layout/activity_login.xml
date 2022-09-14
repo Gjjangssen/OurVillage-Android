@@ -29,7 +29,7 @@
         android:id="@+id/edit_number"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:background="@drawable/item_background"
+        android:background="@drawable/item_blueround"
         android:fontFamily="@font/chosun"/>
 
     <TextView
@@ -46,7 +46,7 @@
         android:id="@+id/edit_name"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:background="@drawable/item_background"
+        android:background="@drawable/item_blueround"
         android:paddingTop = "100dp"
         android:fontFamily="@font/chosun"/>
 

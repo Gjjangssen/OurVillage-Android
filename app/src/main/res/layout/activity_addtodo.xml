@@ -38,7 +38,7 @@
                 <TextView
                     android:layout_width="350dp"
                     android:layout_height="65dp"
-                    android:background="@color/background2"
+                    android:background="@drawable/item_beigeroundtop"
                     android:text="약 투여 일정 추가하기"
                     android:textSize="30dp"
                     android:textColor="@color/black"
@@ -49,29 +49,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="@color/white" >
+                    android:background="@drawable/item_whiteroundbottom" >
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal" >
-                        <RadioGroup
-                            android:id="@+id/radio_drug"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp">
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
+                            android:text="복용 방법"
+                            android:fontFamily="@font/chosun"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="70dp">
-                            <RadioButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="식전"
-                                android:fontFamily="@font/chosun"/>
-                            <RadioButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="식후"
-                                android:fontFamily="@font/chosun"/>
-                        </RadioGroup>
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="100dp" />
                         <Spinner
                             android:id="@+id/spn_drug"
                             android:layout_width="wrap_content"
@@ -92,9 +84,9 @@
                         android:textSize="14dp"
                         android:textColor="@color/black"
                         android:fontFamily="@font/chosun"
-                        android:layout_marginLeft="100dp" />
+                        android:layout_marginLeft="120dp" />
                     <Spinner
-                        android:id="@+id/spn_drugDate"
+                        android:id="@+id/spn_drugTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -114,7 +106,7 @@
                 <TextView
                     android:layout_width="350dp"
                     android:layout_height="65dp"
-                    android:background="@color/background2"
+                    android:background="@drawable/item_beigeroundtop"
                     android:text="병원 예약 일정 추가하기"
                     android:textSize="30dp"
                     android:textColor="@color/black"
@@ -125,13 +117,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="@color/white" >
+                    android:background="@drawable/item_whiteroundbottom" >
                     <EditText
                         android:id="@+id/edt_hospital"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:hint="병원 이름을 입력하세요"
+                        android:layout_margin="10dp"
                         android:fontFamily="@font/chosun"/>
                     <TimePicker
                         android:id="@+id/time_hospital"
@@ -153,7 +146,7 @@
                 <TextView
                     android:layout_width="350dp"
                     android:layout_height="65dp"
-                    android:background="@color/background2"
+                    android:background="@drawable/item_beigeroundtop"
                     android:text="기타 일정 추가하기"
                     android:textSize="30dp"
                     android:textColor="@color/black"
@@ -164,7 +157,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="@color/white" >
+                    android:background="@drawable/item_whiteroundbottom" >
 
                     <TimePicker
                         android:id="@+id/time_other"
@@ -176,6 +169,7 @@
                         android:id="@+id/edit_other"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
                         android:hint="일정을 입력하세요"
                         android:fontFamily="@font/chosun"/>
                 </LinearLayout>

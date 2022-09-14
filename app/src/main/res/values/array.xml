@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_drug">
+        <item>식전 30분</item>
+        <item>식후 30분</item>
+        <item>식후 2시간(공복)</item>
+        <item>식후 즉시</item>
+        <item>자기 전</item>
+    </string-array>
+
+    <string-array name="array_drugTime">
+        <item>1번</item>
+        <item>2번</item>
+        <item>3번</item>
+    </string-array>
+</resources>
