@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background1">
+
+        <!-- 선택한 날짜 표시 -->
+        <TextView
+            android:id="@+id/txt_todoDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:text="월 / 일"/> <!-- string.xml로 선택한 날짜 표시 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 약 투여 일정 추가 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:background="@color/background2"
+                    android:text="약 투여 일정 추가하기"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        <RadioGroup
+                            android:id="@+id/radio_drug"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="70dp">
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="식전" />
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="식후" />
+                        </RadioGroup>
+                        <Spinner
+                            android:id="@+id/spn_drug"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="하루"
+                        android:layout_gravity="center"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="100dp"/>
+                    <Spinner
+                        android:id="@+id/spn_drugDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 병원 예약 일정 추가 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:background="@color/background2"
+                    android:text="병원 예약 일정 추가하기"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white" >
+                    <EditText
+                        android:id="@+id/edt_hospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="병원 이름을 입력하세요" />
+                    <TimePicker
+                        android:id="@+id/time_hospital"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:timePickerMode="spinner"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 기타 일정 추가 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="65dp"
+                    android:background="@color/background2"
+                    android:text="기타 일정 추가하기"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white" >
+
+                    <TimePicker
+                        android:id="@+id/time_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:timePickerMode="spinner"/>
+
+                    <EditText
+                        android:id="@+id/edit_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="일정을 입력하세요" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 날짜 다시 선택 -->
+        <android.widget.Button
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="날짜 다시 선택하기"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
