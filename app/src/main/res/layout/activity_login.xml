@@ -11,9 +11,10 @@
         android:layout_height="wrap_content"
         android:text="로그인"
         android:textStyle="bold"
-        android:textSize="100dp"
-        android:paddingTop="40dp"
-        android:textColor="#000000"/>
+        android:textSize="130dp"
+        android:layout_margin="40dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/sangju"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,14 +22,15 @@
         android:text="전화번호"
         android:textStyle="bold"
         android:textSize="40dp"
-        android:paddingTop="30dp"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:fontFamily="@font/sangju"/>
 
     <EditText
+        android:id="@+id/edit_number"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:background="@drawable/item_background"
-        android:paddingTop = "100dp" />
+        android:fontFamily="@font/chosun"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,39 +38,46 @@
         android:text="이름"
         android:textStyle="bold"
         android:textSize="40dp"
-        android:paddingTop="30dp"
-        android:textColor="#000000"/>
+        android:paddingTop="50dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/sangju"/>
 
     <EditText
+        android:id="@+id/edit_name"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:background="@drawable/item_background"
-        android:paddingTop = "100dp" />
+        android:paddingTop = "100dp"
+        android:fontFamily="@font/chosun"/>
 
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <android.widget.Button
+            android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="로그인 정보 유지"
+            android:text="확인"
             android:background="#FFFFFF"
             android:textColor="#000000"
             android:textSize="18dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:fontFamily="@font/chosun"/>
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1" />
         <android.widget.Button
+            android:id="@+id/btn_join"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="회원 가입"
             android:background="#FFFFFF"
             android:textColor="#000000"
             android:textSize="18dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="@font/chosun"/>
     </LinearLayout>
 
 </LinearLayout>
